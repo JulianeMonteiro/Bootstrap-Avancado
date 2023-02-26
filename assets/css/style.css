@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Rye&display=swap");
+
+:root {
+  --cor-principal: #4b3621;
+  --cor-secundaria: #ae9274;
+  --cor-terciaria: #fff6ed;
+  --branco: #fff;
+  --fonte-principal: "Rye", cursive;
+  --fonte-secundaria: "Kameron", serif;
+}
+
+body {
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-principal);
+  overflow-x: hidden;
+}
+
+.navbar-brand,
+.name-emphasis {
+  font-family: var(--fonte-principal);
+}
+#cabecalho .nav .nav-link {
+  color: var(--branco);
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: #fff;
+  color: var(--cor-principal);
+}
+
+.navbar {
+  background-color: var(--cor-principal);
+}
+
+#sobre-o-restaurante .carousel img {
+  height: 70vh;
+  width: 100%;
+}
+
+.restaurante-img {
+  height: 55vh;
+}
+
+.text-colored,
+.nav-cardapio .nav-link:hover {
+  color: var(--cor-secundaria);
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+  background-color: var(--cor-secundaria);
+}
+.nav-cardapio .nav-link.active,
+#fale-conosco button,
+.nav-cardapio .nav-link.active:hover {
+  color: var(--branco);
+}
+
+.cardapio img {
+  width: 213px;
+  height: 158px;
+}
+
+#eventos,
+#fale-conosco,
+footer {
+  background-color: var(--cor-terciaria);
+}
+
+textarea {
+  resize: none;
+  height: 7em;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links li i:hover {
+  color: var(--cor-principal);
+}
+
+#app h2 {
+  line-height: 1.6em;
+}
+
+.store-apps img {
+  width: 10em;
+  height: 3em;
+}
+
+@media (max-width: 767px) {
+  #sobre-o-restaurante .carousel img {
+    width: 100vw;
+    height: 35vh;
+  }
+
+  #cabecalho .nav .nav-link {
+    margin-top: 10px;
+  }
+
+  #cardapio img {
+    width: 20vw;
+    height: 30vh;
+  }
+
+  #app .motoboy img,
+  #fale-conosco img {
+    display: none;
+  }
+
+  .store-apps {
+    padding-left: 50px;
+  }
+
+  .restaurante-img {
+    height: auto;
+  }
+
+  #sobre-o-restaurante h2 {
+    text-align: center;
+  }
+
+  #eventos img {
+    padding: 25px 0 15px 0;
+  }
+
+  #fale-conosco button {
+    width: 100%;
+  }
+
+  #app h2 {
+    text-align: center;
+    padding-left: 40px;
+  }
+
+  footer .flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links ul {
+    justify-content: center;
+  }
+}

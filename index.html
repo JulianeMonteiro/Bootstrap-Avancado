@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Texas Burger</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header
+      class="navbar navbar-dark navbar-expand-lg sticky-top p-4"
+      id="cabecalho"
+    >
+      <div class="container">
+        <h1 class="navbar-brand m-0 section-title text-uppercase fs-3">
+          Texas Burger
+        </h1>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav
+          class="navbar-collapse collapse justify-content-end"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex">
+            <li class="nav-item fw-bold">
+              <a href="#sobre-o-restaurante" class="nav-link">
+                <i class="bi bi-house-door me-1"></i>
+                Sobre o Restaurante
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#eventos" class="nav-link"
+                ><i class="bi bi-heart"></i>
+                Nosso Espaço
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#cardapio" class="nav-link">
+                <i class="bi bi-card-text me-1"></i>
+                Nosso Cardápio
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#fale-conosco" class="nav-link"
+                ><i class="bi bi-chat-left-text"></i>
+                Fale Conosco
+              </a>
+            </li>
+
+            <li class="nav-item fw-bold">
+              <a href="#app" class="nav-link"
+                ><i class="bi bi-phone"></i>
+                Delivery
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="cabecalho"
+      data-bs-smooth-scroll="true"
+    >
+      <section id="sobre-o-restaurante">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="/assets/images/slides/slide2.jpg"
+                alt="Foto de um hamburguer"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="/assets/images/slides/slide1.jpg"
+                alt="Foto de um hamburguer"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="/assets/images/slides/slide3.jpg"
+                alt="Foto de um hamburguer"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              class="active"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+        <div class="pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="restaurante-img col-md-5">
+                <img
+                  src="/assets/images/restaurante.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Foto do espaço interno do restaurante"
+                />
+              </div>
+              <div class="col-md-7 mt-3">
+                <h2 class="section-title fw-bold pb-md-3">
+                  Sobre o<span class="text-colored"> Texas Burger</span>
+                </h2>
+                <p>Somos apaixonados por hamburguer!</p>
+                <p>
+                  Temos uma equipe especializada em fazer da sua esperiência a
+                  mais incrível possível. Desde a sua chegada até sua despedida.
+                </p>
+
+                <p>
+                  Temos um espaço interno climatizado e super agradável no
+                  estilo bar texano.
+                </p>
+                <p>Contamos com:</p>
+                <ul>
+                  <li>Espaço kids com monitores</li>
+                  <li>Reservas de mesas</li>
+                  <li>Eventos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="eventos" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center fw-bold">
+              Sobre o <span class="text-colored">Espaço</span>
+            </h2>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img
+                src="/assets/images/eventos/kids.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">Espaço Kids</h3>
+              <p>
+                Temos um espaço para a criançada se divertir. E não precisa se
+                preocupar: contamos com monitores capacitados e bem preparados
+                para cuidar dessa turminha.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/assets/images/eventos/eventos.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">Eventos</h3>
+              <p>
+                Quer comemorar seu aniversário? Fazer um happy hour? Amigo
+                secreto? <br />
+                Venha para o Texas Burger e tenha uma experiência memorável!
+              </p>
+            </div>
+
+            <div class="col-md-4">
+              <img
+                src="/assets/images/eventos/ambiente.jpg  "
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">Ambiente Temático</h3>
+              <p>
+                Nosso ambiente é todo temático. Aqui você vive a experiência de
+                estar num verdadeiro bar texano. <br />Contamos com um ambiente
+                climatizado e uma equipe bem preparada para que você tenha uma
+                experiência incrível.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cardapio" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center pb-5 fw-bold">
+              Nosso <span class="text-colored">Cardápio</span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <aside>
+                <nav class="nav nav-pills flex-column nav-cardapio">
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#burger-carne"
+                    class="fw-bold text-start nav-link text-colored active"
+                  >
+                    Burgers de Carne
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#burger-frango"
+                    class="fw-bold text-start nav-link text-colored"
+                  >
+                    Burgers de Frango
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#burger-veggie"
+                    class="fw-bold text-start nav-link text-colored"
+                  >
+                    Burgers Veggies
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#bebidas-sem-alcool"
+                    class="fw-bold text-start nav-link text-colored"
+                  >
+                    Bebidas
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#bebidas-alcoolicas"
+                    class="fw-bold text-start nav-link text-colored"
+                  >
+                    Bebidas Alcoólicas
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#sobremesas"
+                    class="fw-bold text-start nav-link text-colored"
+                  >
+                    Sobremesas
+                  </button>
+                </nav>
+              </aside>
+            </div>
+            <div class="col-md-10">
+              <div class="tab-content">
+                <div class="tab-pane active" id="burger-carne">
+                  <div class="row">
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/burger2.jpg"
+                        alt="hamburguer Bacon"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Texas Bacon
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 180gr de carne pura e grelhada em fogo
+                        forte, bacon, queijo tipo emmental, molho especial e
+                        cebola caramelizada no whisky.
+                      </p>
+                    </div>
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/burger4.jpg"
+                        alt="hamburguer Smoke"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Smoke Burger
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 160gr de carne pura e grelhada em fogo
+                        forte, queijo tipo cheddar, alface, picles e molho de
+                        churrasco.
+                      </p>
+                    </div>
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/burger1.jpg"
+                        alt="hamburguer Tasty"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Tasty Burger
+                      </h5>
+                      <p class="text-center">
+                        Pão crocante assado na hora, 180gr de carne pura e
+                        grelhada em fogo forte, queijo tipo cheddar, alface,
+                        tomate, cebola e molho tasty.
+                      </p>
+                    </div>
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/burger3.jpg"
+                        alt="hamburguer Cheddar"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Giant Cheddar
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 230gr de carne pura e grelhada em fogo
+                        forte, queijo tipo cheddar cremoso, alface e cebola
+                        caramelizada no whiskey.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="burger-frango">
+                  <div class="row">
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/frango.jpg"
+                        alt="hamburguer Chicken Duplo"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Chicken Duplo
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 200gr de burger de frango artesal,
+                        alface e molho especial.
+                      </p>
+                    </div>
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/frango2.jpg"
+                        alt="hamburguer Special Chicken"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Special Chicken
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 120gr burger de frango artesal, alface,
+                        tomate, cebola e molho especial.
+                      </p>
+                    </div>
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/frango3.jpg"
+                        alt="hamburguer Chicken Salad"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Chicken Salad
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 180gr burger de frango artesal, salada,
+                        e molho especial.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="burger-veggie">
+                  <div class="row">
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/veg.jpg"
+                        alt="hamburguer Veggie"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Veggie Texas Bean
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 160gr de burger artesanal de batata
+                        baroa, alface, tomate, picles, cebola e broto de
+                        manjericão.
+                      </p>
+                    </div>
+
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/veggie3.jpg"
+                        alt="hamburguer Veggie"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Veggie Agrião
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 160gr de burger artesanalde tofu
+                        empanado, alface, tomate, picles, cebola e agrião.
+                      </p>
+                    </div>
+                    <div class="cardapio col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/burgers/veggie1.png"
+                        alt="hamburguer Veggie"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Veggie Jack
+                      </h5>
+                      <p class="text-center">
+                        Pão de brioche, 160gr de burger artesanal de jaca,
+                        alface, tomate, picles, cebola, tofu e molho pesto.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="bebidas-sem-alcool">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/suco.jpg"
+                        alt="Suco de laranja"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Suco de laranja
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/Suco-de-limão.jpg"
+                        alt="Suco de laranja"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Suco de Limão
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/suco_de_abacaxi.jpg"
+                        alt="Suco de abacaxi"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Suco de abacaxi
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/suco-de-morango.jpg"
+                        alt="Suco de morango"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Suco de morango
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/suco-da-manga.jpg"
+                        alt="Suco de manga"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Suco de Manga
+                      </h5>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/coca.jpg"
+                        alt="Coca-cola"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Coca-Cola
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/Guarana.png"
+                        alt="Guaraná Antarctica"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Guaraná Antarctica
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/fanta.jpg"
+                        alt="Fanta Uva"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Fanta Uva
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="bebidas-alcoolicas">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/heineken.png"
+                        alt="Cerveja Heineken"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Heineken
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/budweiser.jpg"
+                        alt="Cerveja Budweiser"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Budweiser
+                      </h5>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/bebidas/vinho.jpg"
+                        alt="Vinho"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Vinhos
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="sobremesas">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/sobremesas/brownie.png"
+                        alt="Brownie"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Brownie
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/sobremesas/pudim.jpg"
+                        alt="Pudim Tradicional"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Pudim Tradicional
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/sobremesas/pudim-chia.png"
+                        alt="Pudim de Chia"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Pudim de Chia com Frutas
+                      </h5>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="/assets/images/cardapio/sobremesas/tiramissu.jpg"
+                        alt="tiramissu"
+                      />
+                      <h5 class="text-colored fw-bold mt-2 text-center">
+                        Tiramissu
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center fw-bold pb-5">
+              Fale <span class="text-colored">Conosco</span>
+            </h2>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-md-6 mb-5">
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label fw-bold text-colored"
+                    >Seu nome</label
+                  >
+                  <input type="text" id="nome" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold text-colored"
+                    >Seu e-mail</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="telefone" class="form-label fw-bold text-colored"
+                    >Seu telefone (opcional)</label
+                  >
+                  <input type="tel" id="telefone" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label fw-bold text-colored"
+                    >Sua mensagem</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensagem"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn fw-bold p-1 fs-5">
+                  Enviar
+                </button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <img src="/assets/images/burger-fall.png" alt="hamburguer" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="app" class="pt-5 pb-5">
+        <div class="d-flex justify-content-around">
+          <div class="motoboy row col-md-5">
+            <img
+              src="/assets/images/app.svg"
+              alt="imagem com smartphone e um motoboy"
+            />
+          </div>
+          <div class="row col-md-6 pt-5 pb-5 d-flex">
+            <h2 class="section-title text-center fw-bold pb-3 fs-3">
+              VENHA CONHECER O
+              <span class="text-colored name-emphasis">Texas Burger&#174; </span
+              ><br />
+              OU <br />
+              FAÇA SEU PEDIDO PELO APP
+            </h2>
+            <div class="store-apps d-flex justify-content-center">
+              <img
+                class="pe-3"
+                src="/assets/images/disponivel-google-play.png"
+                alt="ir para google play store e apple"
+              />
+              <img
+                class="ps-3"
+                src="/assets/images/disponivel-na-app-store.png"
+                alt="ir para google play store e apple"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="pb-2 pt-5">
+      <div class="flex d-flex justify-content-center">
+        <div class="col-lg-6 pb-5">
+          <h3 class="section-title fs-4 text-colored">
+            <i class="bi bi-geo-alt-fill"></i>
+            Endereço
+          </h3>
+          <p>Rua Texas nº 99, Bairro Burger - São Paulo - SP</p>
+          <h3 class="section-title fs-4 text-colored">
+            <i class="bi bi-telephone-fill"></i> Telefone
+          </h3>
+          <p>(11) 9999-9999 / (11) 0000-0000</p>
+        </div>
+
+        <div class="row">
+          <h3 class="section-title fs-4 text-colored">
+            <i class="bi bi-hand-thumbs-up-fill"></i>
+            Redes sociais
+          </h3>
+          <div class="social-links">
+            <ul class="d-flex text-center">
+              <li class="fs-5">
+                <a href="#">
+                  <i class="bi bi-facebook text-colored"></i>
+                </a>
+              </li>
+              <li class="fs-5 ms-1 me-1 ps-3 pe-3">
+                <a href="#">
+                  <i class="bi bi-instagram text-colored"></i>
+                </a>
+              </li>
+              <li class="fs-5">
+                <a href="#">
+                  <i class="bi bi-whatsapp text-colored"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-3 border-top">
+        <p>&copy; TEXAS BURGER - Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
