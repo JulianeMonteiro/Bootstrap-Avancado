@@ -11,24 +11,26 @@
 
 body {
   font-family: var(--fonte-secundaria);
-  color: var(--cor-principal);
   overflow-x: hidden;
+}
+
+body,
+#cabecalho .nav .nav-link.active,
+.social-links li i:hover {
+  color: var(--cor-principal);
 }
 
 .navbar-brand,
 .name-emphasis {
   font-family: var(--fonte-principal);
 }
-#cabecalho .nav .nav-link {
-  color: var(--branco);
-}
 
 #cabecalho .nav .nav-link.active {
-  background-color: #fff;
-  color: var(--cor-principal);
+  background-color: var(--branco);
 }
 
-.navbar {
+.navbar,
+.modal-footer button:hover {
   background-color: var(--cor-principal);
 }
 
@@ -47,12 +49,15 @@ body {
 }
 
 .nav-cardapio .nav-link.active,
-#fale-conosco button {
+#fale-conosco button,
+.modal-footer button {
   background-color: var(--cor-secundaria);
 }
 .nav-cardapio .nav-link.active,
+#cabecalho .nav .nav-link,
 #fale-conosco button,
-.nav-cardapio .nav-link.active:hover {
+.nav-cardapio .nav-link.active:hover,
+.modal-footer button a {
   color: var(--branco);
 }
 
@@ -76,11 +81,8 @@ textarea {
   list-style: none;
 }
 
-.social-links li i:hover {
-  color: var(--cor-principal);
-}
-
-#app h2 {
+#app h2,
+.modal-body p {
   line-height: 1.6em;
 }
 
@@ -89,6 +91,13 @@ textarea {
   height: 3em;
 }
 
+#fale-conosco button {
+  width: 50%;
+}
+
+.modal-footer button a {
+  text-decoration: none;
+}
 @media (max-width: 767px) {
   #sobre-o-restaurante .carousel img {
     width: 100vw;
@@ -100,8 +109,7 @@ textarea {
   }
 
   #cardapio img {
-    width: 20vw;
-    height: 30vh;
+    height: 35vh;
   }
 
   #app .motoboy img,
@@ -117,7 +125,9 @@ textarea {
     height: auto;
   }
 
-  #sobre-o-restaurante h2 {
+  #sobre-o-restaurante h2,
+  #app h2,
+  footer .flex {
     text-align: center;
   }
 
@@ -130,14 +140,12 @@ textarea {
   }
 
   #app h2 {
-    text-align: center;
     padding-left: 40px;
   }
 
   footer .flex {
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
 
   .social-links ul {
